@@ -1,6 +1,6 @@
 # DepMap Omics CCLE data on the AWS Open Data Registry
 
-DepMap currently stores raw omics data from publicly-releasible cell line models generated from the [Cancer Cell Line Encyclopedia (CCLE)](https://sites.broadinstitute.org/ccle) on the [Registry of Open Data on AWS](https://registry.opendata.aws/). See [our page](https://registry.opendata.aws/depmap-omics-ccle) on the registry for a description of the data set and also the data dictionary `depmap-omics-ccle-datadict.json` in this repo. Currently included are WES/WGS/RNA CRAM/BAM files for ~1000 cancer cell lines.
+DepMap currently stores raw omics data from publicly-releasible cell line models generated from the [Cancer Cell Line Encyclopedia (CCLE)](https://sites.broadinstitute.org/ccle) on the [Registry of Open Data on AWS](https://registry.opendata.aws/). See [our page](https://registry.opendata.aws/depmap-omics-ccle) on the registry for a description of the data set. A data dictionary `depmap-omics-ccle-datadict.json` is provided in this repo. Currently included are WES/WGS/RNA CRAM/BAM files for ~1000 cancer cell lines.
 
 ## Analyzing the data
 
