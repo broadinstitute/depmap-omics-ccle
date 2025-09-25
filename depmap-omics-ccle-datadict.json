@@ -1,0 +1,219 @@
+[
+    {
+        "name": "age",
+        "type": "integer",
+        "description": "age of donor at time of sampling",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "age_category",
+        "type": "string",
+        "description": "age category of donor at time of sampling (e.g. 'adult', 'pediatric', 'fetus')",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "baits",
+        "type": "string",
+        "description": "WES bait set used",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "cell_format",
+        "type": "string",
+        "description": "cell line growth format (e.g. 'suspension', 'unknown', 'adherent', 'spheroid', 'mixed', 'dome')",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "cell_line_name",
+        "type": "string",
+        "description": "name of cell line",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "cell_line_name_stripped",
+        "type": "string",
+        "description": "name of cell line (alphanumeric)",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "cellosaurus_id",
+        "type": "string",
+        "description": "ID of cell line in Cellosaurus",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "crai_bai_url",
+        "type": "string",
+        "description": "URL of CRAM/BAM index",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "cram_bam_crc32c_hash",
+        "type": "string",
+        "description": "CRC32C hash of CRAM/BAM",
+        "required": false,
+        "unique": true
+    },
+    {
+        "name": "cram_bam_size",
+        "type": "string",
+        "description": "size (in bytes) of CRAM/BAM",
+        "required": false,
+        "unique": true
+    },
+    {
+        "name": "cram_bam_url",
+        "type": "string",
+        "description": "URL of CRAM/BAM",
+        "required": false,
+        "unique": true
+    },
+    {
+        "name": "datatype",
+        "type": "string",
+        "description": "type of data (e.g. 'rna', 'wes', 'wgs')",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "depmap_code",
+        "type": "string",
+        "description": "lineage code (in DepMap nomenclature)",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "donor_media_formulation",
+        "type": "string",
+        "description": "description of onboarding media",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "growth_pattern",
+        "type": "string",
+        "description": "cell line growth format (e.g. 'suspension', 'unknown', 'adherent', 'spheroid', 'mixed', 'dome')",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "model_condition_id",
+        "type": "string",
+        "description": "DepMap model condition ID",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "model_condition_media_formulation",
+        "type": "string",
+        "description": "media grown in at the model condition level",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "model_id",
+        "type": "string",
+        "description": "DepMap model ID",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "oncotree_code",
+        "type": "string",
+        "description": "Oncotree lineage code",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "oncotree_lineage",
+        "type": "string",
+        "description": "Oncotree lineage description",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "oncotree_primary_disease",
+        "type": "string",
+        "description": "Oncotree primary disease description",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "oncotree_subtype",
+        "type": "string",
+        "description": "Oncotree lineage subtype description",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "patient_id",
+        "type": "string",
+        "description": "DepMap patient/donor ID",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "primary_or_metastasis",
+        "type": "string",
+        "description": "sample collection site type (e.g. 'primary', 'metastatis', 'recurrent')",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "product",
+        "type": "string",
+        "description": "sequencing product used",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "profile_id",
+        "type": "string",
+        "description": "DepMap profile ID",
+        "required": false,
+        "unique": true
+    },
+    {
+        "name": "reference_genome",
+        "type": "string",
+        "description": "human reference genome for CRAM/BAM alignment (e.g. 'hg19', 'hg38')",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "sample_collection_site",
+        "type": "string",
+        "description": "sample collection site",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "sample_id",
+        "type": "string",
+        "description": "DepMap sample/sequencing ID",
+        "required": false,
+        "unique": true
+    },
+    {
+        "name": "sex",
+        "type": "string",
+        "description": "donor sex",
+        "required": false,
+        "unique": false
+    },
+    {
+        "name": "stranded",
+        "type": "boolean",
+        "description": "whether RNA sample was aligned in stranded mode",
+        "required": false,
+        "unique": false
+    }
+]
