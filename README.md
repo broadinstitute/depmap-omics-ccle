@@ -2,6 +2,32 @@
 
 DepMap currently stores raw omics data from publicly-releasible cell line models generated from the [Cancer Cell Line Encyclopedia (CCLE)](https://sites.broadinstitute.org/ccle) on the [Registry of Open Data on AWS](https://registry.opendata.aws/). See [our page](https://registry.opendata.aws/depmap-omics-ccle) on the registry for a description of the data set. A data dictionary `depmap-omics-ccle-datadict.json` is provided in this repo. Currently included are WES/WGS/RNA CRAM/BAM files for ~1000 cancer cell lines.
 
+## Bucket contents
+
+Since this data is publicly readable, `aws s3` commands should include `--no-sign-request`, e.g. `aws s3 ls 's3://depmap-omics-ccle' --no-sign-request`.
+
+### Data dictionary
+
+See `s3://depmap-omics-ccle/docs/data_dictionary.json` for a data dictionary.
+
+### Inventory
+
+An inventory of the objects in the `data` folder is available in the `s3://depmap-omics-ccle/metadata` folder in several formats:
+
+```sh
+aws s3 ls 's3://depmap-omics-ccle/metadata' --recursive --no-sign-request
+```
+
+```
+2025-09-29 14:31:28     878423 metadata/inventory.csv
+2025-09-29 14:31:30    2955629 metadata/inventory.json
+2025-09-29 14:31:30     251731 metadata/inventory.parquet
+```
+
+### Data
+
+Objects referenced in the inventory are organized by data type (rna/wes/wgs), then file type, e.g. `s3://depmap-omics-ccle/data/wgs/cram/CDS-051xn7.cram`.
+
 ## Analyzing the data
 
 ### AWS HealthOmics
