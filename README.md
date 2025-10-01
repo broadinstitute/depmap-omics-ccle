@@ -8,7 +8,7 @@ Since this data is publicly readable, `aws s3` commands should include `--no-sig
 
 ### Data dictionary
 
-See `s3://depmap-omics-ccle/docs/data_dictionary.json` for a data dictionary.
+See `s3://depmap-omics-ccle/docs/data_dictionary.json`.
 
 ### Inventory
 
@@ -26,7 +26,7 @@ aws s3 ls 's3://depmap-omics-ccle/metadata' --recursive --no-sign-request
 
 ### Data
 
-Objects referenced in the inventory are organized by data type (rna/wes/wgs), then file type, e.g. `s3://depmap-omics-ccle/data/wgs/cram/CDS-051xn7.cram`.
+Objects referenced in the inventory are organized by data type (rna/wes/wgs), then file type, e.g. `s3://depmap-omics-ccle/data/wgs/cram/CDS-051xn7.cram`. Most, but not all, CRAM/BAM files have indexes available.
 
 ## Analyzing the data
 
