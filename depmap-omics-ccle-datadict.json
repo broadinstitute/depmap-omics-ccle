@@ -215,5 +215,12 @@
         "description": "whether RNA sample was aligned in stranded mode",
         "required": false,
         "unique": false
+    },
+    {
+        "name": "vcf",
+        "type": "string",
+        "description": "URL of unfiltered mutations VCF (for WGS only)",
+        "required": false,
+        "unique": false
     }
 ]
